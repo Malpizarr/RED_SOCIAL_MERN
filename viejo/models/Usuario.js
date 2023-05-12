@@ -32,7 +32,7 @@ const UsuarioSchema = new mongoose.Schema(
             type: Array,
             default: [],
         }, location: String,
-        ocupation: String,
+        occupation: String,
         viewedProfile: Number,
         impressions: Number,
     },{timestamps: true});
