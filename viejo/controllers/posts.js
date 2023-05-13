@@ -10,8 +10,8 @@ export const crearPost = async (req, res) => {
         const usuario = await Usuario.findById(userId);
         const newPost = new Post({
             userId,
-            nombre: usuario.nombre,
-            apellido: usuario.apellido,
+            firstName: usuario.firstName,
+            lastName: usuario.lastName,
             location: usuario.location,
             description,
             userPicturePath: usuario.picturePath,

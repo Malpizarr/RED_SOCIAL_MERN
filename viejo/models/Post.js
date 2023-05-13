@@ -6,11 +6,11 @@ const PostSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        nombre: {
+        firstName: {
             type: String,
             required: true,
         },
-        apellido: {
+        lastName: {
             type: String,
             required: true,
         },
