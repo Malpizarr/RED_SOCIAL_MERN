@@ -14,10 +14,7 @@ import postRoutes from "./rutas/post.js";
 import { register } from "./controllers/auth.js";
 import { crearPost } from "./controllers/posts.js";
 import { auth } from "./middleware/auth.js";
-import Usuario from "./models/Usuario.js";
-import Post from "./models/Post.js";
-import { users, posts } from "./data/index.js";
-import { env } from "process";
+
 
 /* CONFIGURATIONS */
 const __filename = fileURLToPath(import.meta.url);
