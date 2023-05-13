@@ -32,7 +32,7 @@ const NavBar = () => {
     const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-    //const user = useSelector((state) => state.user);
+    const user = useSelector((state) => state.user);
     const isNoMobile = useMediaQuery("(min-width: 1000px)");
 
     const theme = useTheme();
@@ -42,7 +42,7 @@ const NavBar = () => {
     const primary = theme.palette.primary.main;
     const secondary = theme.palette.secondary.alt;
 
-   const fullName = `mau`;
+   const fullName = user.firstName
 
 
     return (
