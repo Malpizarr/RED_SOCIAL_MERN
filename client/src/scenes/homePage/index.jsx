@@ -4,6 +4,7 @@ import UserWidget from "../widgets/UserWidget";
 import {useSelector} from "react-redux";
 import PostWidget from "../widgets/PostWidget";
 import Posts from "../widgets/Posts";
+import FriendListWidget from "../widgets/FriendListWidget";
 
 
 const HomePage = () => {
@@ -33,6 +34,9 @@ const HomePage = () => {
                 </Box>
                 {isNonMobile && (
                     <Box flexBasis={"26%"}>
+                        <Box m="2rem 0" />
+                        <FriendListWidget userId={_id} />
+
 
                     </Box>
                 )}
